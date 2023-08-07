@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Montsey;
+  src: url(/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Fraunces;
+  src: url(/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+body .wrapper {
+  padding: 15px;
+}
+body .wrapper .container {
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .wrapper .container #image {
+  display: block;
+  max-width: -webkit-fill-available;
+  max-width: -moz-available;
+  max-width: fill;
+}
+body .wrapper .container .about-chanel {
+  background-color: hsl(0, 0%, 100%);
+  padding: 18px;
+}
+body .wrapper .container .about-chanel .perfume {
+  font-family: Montsey;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  font-size: 11.5px;
+  color: hsl(228, 12%, 48%);
+  margin-bottom: 15px;
+}
+body .wrapper .container .about-chanel .gabrielle {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 27px;
+  color: hsl(212, 21%, 14%);
+  margin-bottom: 15px;
+}
+body .wrapper .container .about-chanel .floral {
+  font-family: Montsey;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+body .wrapper .container .about-chanel .price-tag {
+  display: flex;
+}
+body .wrapper .container .about-chanel .price-tag h3 {
+  font-family: Fraunces;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+  font-size: 25px;
+}
+body .wrapper .container .about-chanel .price-tag h6 {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: Montsey;
+  font-size: 10px;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+body .wrapper .container .about-chanel button {
+  margin-bottom: 5px;
+  font-family: Montsey;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  align-content: center;
+  padding: 15px;
+  border: 1px solid hsl(158, 36%, 37%);
+  border-radius: 5px;
+  width: 100%;
+}
+body .wrapper .container .about-chanel button #cart-img {
+  width: 12px;
+}
+body .wrapper .container .about-chanel button:hover {
+  background-color: hsl(158, 44%, 24%);
+  cursor: pointer;
+}
+body .attribution {
+  padding: 20px;
+  font-family: Fraunces;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    padding: 20px;
+    height: 600px;
+  }
+  body .wrapper {
+    width: 517px;
+    height: 415px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  body .wrapper .container {
+    border-radius: 10px;
+    width: 525px;
+    height: 411px;
+    display: flex;
+    flex-direction: row;
+  }
+  body .wrapper .container .card-pics {
+    display: flex;
+    flex-direction: row;
+    width: 254px;
+    height: 411px;
+  }
+  body .wrapper .container .about-chanel {
+    padding: 20px;
+    width: 266px;
+    height: 411px;
+  }
+}/*# sourceMappingURL=style.css.map */

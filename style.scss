@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Montsey;
+  src: url(/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Fraunces;
+  src: url(/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  max-width: 500px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .wrapper {
+    padding: 15px;
+    .container {
+      border-radius: 10px;
+      overflow: hidden;
+      #image {
+        display: block;
+        max-width: fill;
+      }
+      .about-chanel {
+        background-color: hsl(0, 0%, 100%);
+        padding: 18px;
+
+        .perfume {
+          font-family: Montsey;
+          letter-spacing: 0.2rem;
+          font-weight: 500;
+          font-size: 11.5px;
+          color: hsl(228, 12%, 48%);
+          margin-bottom: 15px;
+        }
+        .gabrielle {
+          font-family: Fraunces;
+          font-weight: 700;
+          font-size: 27px;
+          color: hsl(212, 21%, 14%);
+          margin-bottom: 15px;
+        }
+        .floral {
+          font-family: Montsey;
+          color: hsl(228, 12%, 48%);
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          margin-bottom: 15px;
+        }
+        .price-tag {
+          display: flex;
+          // margin-bottom: 15px;
+          h3 {
+            font-family: Fraunces;
+            font-weight: 700;
+            color: hsl(158, 36%, 37%);
+            font-size: 25px;
+          }
+          h6 {
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family: Montsey;
+            font-size: 10px;
+            color: hsl(228, 12%, 48%);
+            text-decoration: line-through;
+            font-weight: 500;
+          }
+        }
+        button {
+          margin-bottom: 5px;
+          font-family: Montsey;
+          font-size: 14px;
+          font-weight: 500;
+          background-color: hsl(158, 36%, 37%);
+          color: hsl(0, 0%, 100%);
+          align-content: center;
+          padding: 15px;
+          border: 1px solid hsl(158, 36%, 37%);
+          border-radius: 5px;
+          width: 100%;
+          #cart-img {
+            width: 12px;
+          }
+        }
+        button:hover {
+          background-color: hsl(158, 44%, 24%);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .attribution {
+    padding: 20px;
+    font-family: Fraunces;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    padding: 20px;
+    height: 600px;
+    .wrapper {
+      width: 517px;
+      height: 415px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 10px 0;
+      .container {
+        border-radius: 10px;
+        width: 525px;
+        height: 411px;
+        display: flex;
+        flex-direction: row;
+
+        .card-pics {
+          display: flex;
+          flex-direction: row;
+          width: 254px;
+          height: 411px;
+        }
+        .about-chanel {
+          padding: 20px;
+          width: 266px;
+          height: 411px;
+        }
+      }
+    }
+  }
+}
